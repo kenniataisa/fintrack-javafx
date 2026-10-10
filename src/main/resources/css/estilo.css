@@ -1,0 +1,128 @@
+.root {
+    -fx-background-color: #1f2328;
+    -fx-font-size: 14px;
+}
+
+.label {
+    -fx-text-fill: #e8ece9;
+}
+
+.check-box {
+    -fx-text-fill: #e8ece9;
+}
+
+.check-box .box {
+    -fx-background-color: #2a2f36;
+    -fx-border-color: #c6f432;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #c6f432;
+}
+
+.titulo {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #c6f432;
+}
+
+.text-field {
+    -fx-background-color: #2a2f36;
+    -fx-text-fill: #e8ece9;
+    -fx-border-color: #3d444d;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.text-field:focused {
+    -fx-border-color: #c6f432;
+}
+
+.date-picker .text-field {
+    -fx-background-color: #2a2f36;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #3d444d;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-background-color: #c6f432;
+}
+
+.button {
+    -fx-background-color: #c6f432;
+    -fx-text-fill: #1f2328;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #d8ff5a;
+}
+
+.botao-perigo {
+    -fx-background-color: #ff5c7a;
+    -fx-text-fill: white;
+}
+
+.botao-perigo:hover {
+    -fx-background-color: #ff7d94;
+}
+
+.table-view {
+    -fx-background-color: #3d444d;
+    -fx-control-inner-background: #2a2f36;
+    -fx-control-inner-background-alt: #252a30;
+}
+
+.table-view:focused {
+    -fx-background-color: #c6f432, #2a2f36;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #343a42;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #c6f432;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #46506a;
+}
+
+.table-cell {
+    -fx-text-fill: #e8ece9;
+    -fx-border-color: transparent #343a42 transparent transparent;
+}
+
+.table-row-cell {
+    -fx-table-cell-border-color: #343a42;
+}
+
+.erro {
+    -fx-text-fill: #ff5c7a;
+}
+
+.rotulo-saldo {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.valor-saldo {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.saldo-positivo {
+    -fx-text-fill: #c6f432;
+}
+
+.saldo-negativo {
+    -fx-text-fill: #ff5c7a;
+}

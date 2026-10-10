@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.PrincipalController">
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+    <top>
+        <Label text="Minhas finanças" styleClass="titulo" BorderPane.alignment="CENTER"/>
+    </top>
+    <center>
+        <TableView fx:id="tabelaTransacoes">
+            <columns>
+                <TableColumn fx:id="colunaData" text="Data" prefWidth="110"/>
+                <TableColumn fx:id="colunaDescricao" text="Descrição" prefWidth="280"/>
+                <TableColumn fx:id="colunaValor" text="Valor" prefWidth="130"/>
+                <TableColumn fx:id="colunaTipo" text="Tipo" prefWidth="100"/>
+            </columns>
+            <BorderPane.margin>
+                <Insets top="15" bottom="15"/>
+            </BorderPane.margin>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Adicionar" onAction="#abrirNovaTransacao"/>
+            <Button text="Excluir" onAction="#removerTransacao" styleClass="botao-perigo"/>
+            <Button text="Resumo" onAction="#abrirRelatorio"/>
+        </HBox>
+    </bottom>
+</BorderPane>

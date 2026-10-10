@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controller.RelatorioController" spacing="25" alignment="TOP_CENTER">
+    <padding>
+        <Insets top="25" right="40" bottom="25" left="40"/>
+    </padding>
+    <Label text="Resumo" styleClass="titulo"/>
+    <GridPane hgap="30" vgap="15" alignment="CENTER">
+        <Label text="Total de entradas:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <Label fx:id="labelReceitas" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="Total de saídas:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Label fx:id="labelDespesas" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Label text="Quantidade de movimentações:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <Label fx:id="labelQuantidade" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <Label text="Saldo atual:" styleClass="rotulo-saldo" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <Label fx:id="labelSaldo" styleClass="valor-saldo" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    </GridPane>
+    <Button fx:id="botaoVoltar" text="Voltar"/>
+</VBox>
