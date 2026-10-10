@@ -94,4 +94,4 @@ mvn test
 
 ## Autoria
 
-Trabalho feito para o curso Capacita iRede - Residência em TIC 20.
+Trabalho feito para o curso Capacita iRede.
